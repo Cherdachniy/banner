@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Light", sans-serif;
+}
+
+main {
+  height: 100vh;
+  max-width: 428px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 65px 20px 38px;
+  background: url("./assets/background/4.png") center no-repeat;
+  background-size: cover;
+  color: white;
+}
+@media screen and (max-device-height: 667px) {
+  main {
+    padding: 35px 10px 20px;
+  }
+}
+@media screen and (min-device-width: 375px) {
+  main {
+    background: url("./assets/background/4@2x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-device-width: 414px) {
+  main {
+    background: url("./assets/background/4@3x.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+}
+@media screen and (max-device-height: 667px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+}
+.tools a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.tools a:first-child {
+  height: 16px;
+  width: 16px;
+  background: url("assets/cross.svg") center no-repeat;
+}
+@media screen and (max-device-height: 667px) {
+  .tools a {
+    font-size: 14px;
+  }
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  padding: 0 15px;
+}
+@media screen and (max-device-height: 667px) {
+  .content {
+    padding: 0;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  margin: 29px 0 52px;
+}
+.advantages span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.advantages span:before {
+  display: block;
+  height: 26px;
+  width: 26px;
+}
+.advantages .unlimited:before {
+  content: "";
+  background: center no-repeat url("assets/unlimitedDocs.svg");
+}
+.advantages .export:before {
+  content: "";
+  background: center no-repeat url("assets/export.svg");
+}
+.advantages .ocr:before {
+  content: "";
+  background: center no-repeat url("assets/noAds.svg");
+}
+@media screen and (max-device-height: 667px) {
+  .advantages {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+}
+form .tariff-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 162px;
+  width: 131px;
+  border-radius: 20px;
+  padding: 23px 0 13px;
+  margin: 0 auto;
+  transition: 0.15s ease-in-out;
+  opacity: 0.5;
+}
+form label.normal {
+  background: url("assets/shape-1.svg") center no-repeat;
+}
+form label.best {
+  position: relative;
+  background: url("assets/shape-2.svg") center no-repeat;
+}
+form label.best .discount {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  top: -6px;
+  right: -4px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  font-size: 10px;
+  transition: 0.15s ease-in-out;
+}
+form label .card-title {
+  font-size: 17px;
+}
+form label .price {
+  font-size: 14px;
+}
+form label .bonus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  width: 105%;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #495795;
+}
+form label .counted {
+  font-size: 12px;
+}
+form label.active {
+  transform: scale(1.1);
+}
+@media screen and (max-device-height: 667px) {
+  form label {
+    transform: scale(0.8);
+  }
+}
+form input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+form input:checked + label {
+  transform: scale(1.1);
+  opacity: 1;
+}
+@media screen and (max-device-height: 667px) {
+  form input:checked + label {
+    transform: scale(0.9);
+  }
+}
+form button {
+  height: 54px;
+  width: 100%;
+  border-radius: 30px;
+  margin: 16px 0;
+  background: linear-gradient(#1987FF, #19CCFF);
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+@media screen and (max-device-height: 667px) {
+  form button {
+    margin: 10px 0;
+  }
+}
+form .note {
+  font-size: 11px;
+  opacity: 50%;
+}
+@media screen and (max-device-height: 667px) {
+  form {
+    margin: 10px 0;
+  }
+}
+
+.documentations {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+  font-size: 11px;
+}
+.documentations a {
+  color: #BDC0D0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Test Banner</title>
+</head>
+<body>
+    <main>
+        <div class="tools">
+            <a href="#"></a>
+            <a href="#" data-set="Restore"></a>
+        </div>
+        <div class="content">
+            <h1 data-set="Unlimited Access<br>to All Features"></h1>
+            <div class="advantages">
+                <div>
+                    <span class="unlimited" data-set="Unlimited documents"></span>
+                    <span class="export" data-set="Count mode"></span>
+                    <span class="ocr" data-set="Text recognition (OCR)"></span>
+                </div>
+            </div>
+            <form>
+                <div class="tariff-cards">
+                    <input type="radio" name="tariffs" id="normal" value="https://apple.com/">
+                    <label class="normal" for="normal">
+                        <span class="card-title" data-set="Monthly"></span>
+                        <span class="price" data-set="<strong>{{price}}</strong><br>per month"></span>
+                        <span class="bonus" data-set="3 DAYS FREE"></span>
+                        <span class="counted" data-set="{{price}}/month"></span>
+                    </label>
+
+                    <input type="radio" name="tariffs" id="best" value="https://google.com/" checked>
+                    <label class="best" for="best">
+                        <span class="discount" data-set="-83%"></span>
+                        <span class="card-title" data-set="Annually"></span>
+                        <span class="price" data-set="<strong>{{price}}</strong><br>per year"></span>
+                        <span class="bonus" data-set="MOST POPULAR"></span>
+                        <span class="counted" data-set="{{price}}/month"></span>
+                    </label>
+                </div>
+                <button type="submit" data-set="Continue"></button>
+                <span class="note" data-set="Auto-renewable. Cancel anytime."></span>
+            </form>
+            <div class="documentations">
+                <a href="#" data-set="Terms of Use"></a>
+                <a href="#" data-set="Privacy Policy"></a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
