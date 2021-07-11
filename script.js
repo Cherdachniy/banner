@@ -32,7 +32,7 @@ switch (checkUrl()) {
         break;
     default:
         history.replaceState('', 'title en', '?lang=en');
-        readLanguageFile("en.json").then((data) => parseData(data));
+        readLanguageFile("localizations/en.json").then((data) => parseData(data));
 }
 
 function changeLanguage(lang) {
