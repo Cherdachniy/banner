@@ -25,13 +25,13 @@ main {
     padding: 35px 10px 20px;
   }
 }
-@media screen and (min-device-width: 375px) {
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
   main {
     background: url("./assets/background/4@2x.png") center no-repeat;
     background-size: cover;
   }
 }
-@media screen and (min-device-width: 414px) {
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
   main {
     background: url("./assets/background/4@3x.png") center no-repeat;
     background-size: cover;
