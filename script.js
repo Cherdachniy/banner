@@ -71,6 +71,9 @@ function parseData(data) {
 }
 
 document.querySelectorAll('.content input').forEach((el) => {
+    if (el.checked) {
+        document.querySelector('.content form').action = el.value;
+    }
     el.addEventListener('change', () => {
         document.querySelector('.content form').action = el.value;
     })
