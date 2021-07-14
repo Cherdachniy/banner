@@ -44,7 +44,7 @@ window.onpopstate = () => {
     if (urlLang) {
         changeLanguage(urlLang);
     } else {
-        let language = navigator.language.substr(0, 2);
+        let language = navigator.languages[0].substr(0, 2);
         changeLanguage(language);
     }
 }
